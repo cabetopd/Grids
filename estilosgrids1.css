@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html,body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	font-size: 1rem;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-row: 50px 50px 50px;
+	grid-template-areas: 
+		"firstheader firstheader secondheader secondheader"
+		"minimain main main main"
+		"footer footer footer footer";
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+}
+
+.item1{
+	grid-area: firstheader;
+	background-color: #FF8686;
+}
+
+.item2{
+	grid-area: secondheader;
+	background-color: #FF3939;
+}
+
+.item3{
+	grid-area: minimain;
+	background-color: #FF9C27;
+}
+
+.item4{
+	grid-area: main;
+	background-color: #E77D00;
+}
+
+.item5{
+	grid-area: footer;
+	background-color: #20EE9E;
+}
